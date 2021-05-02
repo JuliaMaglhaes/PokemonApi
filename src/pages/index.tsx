@@ -40,7 +40,7 @@ return(
             <div className={styles.cardPokemon}>
               <div className={styles.informationPokemon}>
                     <p>{pokemon.id}</p>
-                    <p>Tipo</p>
+                    <p>{pokemon.types[0].type.name}</p>
                 </div> 
                 <div className={styles.imageNamePokemon}>
                     <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${pokemon.id}.gif`}/>
