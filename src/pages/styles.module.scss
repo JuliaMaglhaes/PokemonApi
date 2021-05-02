@@ -28,16 +28,18 @@
     display:flex;
     width:100%;
     background-color:yellow;
-    height:auto;
+    height:50%;
     flex-direction: column;
     justify-content:center;
     align-items: center;
 
     img{
-        width:40%; 
+        width:auto; 
+        height:80%;
         justify-content:center;
         display:flex;
         align-items:center;
+        margin-top:-200px;
     }
 
 }
