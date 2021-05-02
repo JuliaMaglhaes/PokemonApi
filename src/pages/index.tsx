@@ -1,5 +1,6 @@
-import { useEffect, useState } from "react"
-import { api } from "../services/api"
+import React, { useEffect, useState } from "react"
+import { Header } from "../components/Header";
+import { api } from "../services/api";
 
 export default function Home() {
 
@@ -33,6 +34,7 @@ export default function Home() {
 
   return (
     <div>
+      <Header/>
       {pokemons.map((pokemon) =>{
         return(
           <p>{pokemon.name}</p>          
