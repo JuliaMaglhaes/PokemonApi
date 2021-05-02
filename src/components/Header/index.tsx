@@ -17,6 +17,11 @@ export function Header(){
                             <a>Pokémons</a>
                         </Link>
                     </li>
+                    <li>
+                        <Link href="/sobre">
+                            <a>Sobre</a>
+                        </Link>
+                    </li>
                 </ul>
             </nav>
         </div>
