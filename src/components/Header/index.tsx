@@ -5,25 +5,7 @@ import styles from "./styles.module.scss"
 export function Header(){
     return(
         <div className={styles.headerContainer}>
-            <nav>
-                <ul>
-                    <li>
-                        <Link href="/">
-                            <a>Início</a>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="/pokemons">
-                            <a>Pokémons</a>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="/sobre">
-                            <a>Sobre</a>
-                        </Link>
-                    </li>
-                </ul>
-            </nav>
+           
         </div>
     )
 }

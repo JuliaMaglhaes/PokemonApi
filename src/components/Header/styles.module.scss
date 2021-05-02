@@ -12,6 +12,7 @@
         position: relative;
         align-items: center;
         width:100%;
+        text-decoration: none;
 
         ul{
             display:flex;
@@ -21,6 +22,14 @@
             li{
                 justify-content:space-between;
                 width:10%;
+                text-align: center;
+                text-transform: uppercase;
+
+                a{
+                    text-decoration: none;
+                    color:white;
+                }
+                
             }
         }
     }

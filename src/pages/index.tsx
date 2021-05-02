@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
-import { Header } from "../components/Header";
 import { api } from "../services/api";
+import styles from "./styles.module.scss"
 
 export default function Home() {
 
@@ -25,22 +25,40 @@ export default function Home() {
           setPokemons(data);
         })
       }catch{
-        console.log('seu ruim')
+        console.log('Erro')
       }
     }
     fetchPokemons()
    },[limit])
    console.log(pokemons)
 
-  return (
-    <div>
-      <Header/>
-      {pokemons.map((pokemon) =>{
+return(
+  <div>
+    {pokemons.map((pokemon) =>{
+      return (
+          <div className={styles.cardPokemonContainer}>
+            <div className={styles.cardPokemon}>
+              <div className={styles.informationPokemon}>
+                    <p>{pokemon.id}</p>
+                    <p>Tipo</p>
+                </div> 
+                <div className={styles.imageNamePokemon}>
+                    <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${pokemon.id}.gif`}/>
+                    <p>{pokemon.name}</p>
+                </div>
+                
+            </div>
+          </div>
+        )
+    })}
+  </div>
+)
+
+      /* {pokemons.map((pokemon) =>{
         return(
           <p>{pokemon.name}</p>          
         )
       })}
-    <button onClick={() => setLimit(limit+5)}>Carregar mais</button>
-    </div>
-  )
+    <button onClick={() => setLimit(limit+5)}>Carregar mais</button> */
+
 }
