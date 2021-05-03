@@ -35,23 +35,29 @@ export default function Home() {
 
 return(
   <div>
-    {pokemons.map((pokemon, index) =>{
-      return (
           <div className={styles.cardPokemonContainer}>
-            <div className={styles.geralContainer}>
-              <PokemonCard 
-                id = {pokemon.id}
-                name = {pokemon.name}
-                habbitat ={pokemon.abilities[0].ability.name}
-                image = {`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${pokemon.id}.gif`}
-                type = {pokemon.types[0].type.name}
-                key = {index}
-                
-              />
+          {pokemons.map((pokemon, index) =>{
+            return (
+              <div className={styles.geralContainer}>
+                <PokemonCard 
+                  id = {pokemon.id}
+                  name = {pokemon.name}
+                  habbitat ={pokemon.abilities[0].ability.name}
+                  image = {`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${pokemon.id}.gif`}
+                  type = {pokemon.types[0].type.name}
+                  key = {index}
+                  hp = {pokemon.stats[0].base_stat}
+                  attack = {pokemon.stats[1].base_stat}
+                  defense = {pokemon.stats[2].base_stat}
+                  special1 = {pokemon.stats[3].base_stat}
+                  special2 = {pokemon.stats[4].base_stat}
+                  speed = {pokemon.stats[5].base_stat}
+                />
             </div>
+            )})}
           </div>
         )
-    })}
+    {/* })} */}
   </div>
 )
 
