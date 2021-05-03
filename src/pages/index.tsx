@@ -42,9 +42,11 @@ return(
               <PokemonCard 
                 id = {pokemon.id}
                 name = {pokemon.name}
+                habbitat ={pokemon.abilities[0].ability.name}
                 image = {`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${pokemon.id}.gif`}
                 type = {pokemon.types[0].type.name}
                 key = {index}
+                
               />
             </div>
           </div>
