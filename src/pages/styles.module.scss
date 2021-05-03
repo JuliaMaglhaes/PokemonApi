@@ -6,40 +6,4 @@
     margin-top:30px;
 }
 
-.cardPokemon{
-    width:250px;
-    height:350px;
-    display:flex;
-    background-color:blue;
-    border-radius:10px;
-    flex-direction: column;
-}
 
-.informationPokemon{
-    display:flex;
-    justify-content:space-between;
-    width:230px;
-    margin:10px;
-    flex-direction: row;
-    text-align: center;
-}
-
-.imageNamePokemon{
-    display:flex;
-    width:100%;
-    background-color:yellow;
-    height:50%;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
-
-    img{
-        width:auto; 
-        height:80%;
-        justify-content:center;
-        display:flex;
-        align-items:center;
-        margin-top:-200px;
-    }
-
-}

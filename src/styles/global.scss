@@ -1,3 +1,5 @@
+@import "../../src/components/PokemonCard/styles.module.scss";
+
 *{
     margin:0;
     padding:0;
@@ -8,3 +10,18 @@
     --header-color:#00000088;
     --background-color: #000000;
 }
+
+.fire{ background-color: #c15445;}
+.water{ background-color: #96d3d2;}
+.ground{ background-color:#f4e7da;}
+.grass{ background-color: #8aa667}
+.electric{ background-color:#f6e652}
+.rock{background-color: #524749}
+.fairy{background-color: #fbaedd}
+.poison{ background-color:#a584c6}
+.bug{ background-color:#3fc1b2}
+.dragon{ background-color:#ce9c10}
+.flying{ background-color:#f7e77b}
+.psychic{ background-color:#9457d1}
+.normal{ background-color:#77554b}
+.fighyting{ background-color:#a1b5c7}
