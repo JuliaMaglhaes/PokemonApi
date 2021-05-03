@@ -6,6 +6,23 @@ export default function Home() {
 
   const [pokemons, setPokemons] = useState([]);
   const [limit, setLimit] = useState(40);
+
+  const colors = {
+    fire: '#c15445',
+    water: '#96d3d2',
+    ground: '#f4e7da',
+    grass: '#8aa667',
+    electric: '#f6e652',
+    rock: '#524749',
+    fairy: '#fbaedd',
+    poison: '#a584c6',
+    bug: '#3fc1b2',
+    dragon: '#ce9c10',
+    flying:'#f7e77b',
+    psychic: '#9457d1',
+    normal: '#77554b',
+    fighyting: '#a1b5c7'
+  }
   
   useEffect(() =>{
     async function fetchPokemons(){
@@ -46,13 +63,14 @@ return(
                     <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${pokemon.id}.gif`}/>
                     <p>{pokemon.name}</p>
                 </div>
-                
             </div>
           </div>
         )
     })}
   </div>
 )
+
+
 
       /* {pokemons.map((pokemon) =>{
         return(
