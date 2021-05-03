@@ -38,13 +38,15 @@ return(
     {pokemons.map((pokemon, index) =>{
       return (
           <div className={styles.cardPokemonContainer}>
-            <PokemonCard 
-            id = {pokemon.id}
-            name = {pokemon.name}
-            image = {`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${pokemon.id}.gif`}
-            type = {pokemon.types[0].type.name}
-            key = {index}
-            />
+            <div className={styles.geralContainer}>
+              <PokemonCard 
+                id = {pokemon.id}
+                name = {pokemon.name}
+                image = {`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${pokemon.id}.gif`}
+                type = {pokemon.types[0].type.name}
+                key = {index}
+              />
+            </div>
           </div>
         )
     })}
