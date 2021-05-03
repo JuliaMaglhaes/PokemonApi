@@ -56,18 +56,13 @@ return(
             </div>
             )})}
           </div>
-        )
-    {/* })} */}
+        <div className={styles.verMais}>
+              <button onClick={() => setLimit(limit+8)}>
+                <p>Carregar mais</p>
+                </button> 
+      </div>
   </div>
 )
 
-
-
-      /* {pokemons.map((pokemon) =>{
-        return(
-          <p>{pokemon.name}</p>          
-        )
-      })}
-    <button onClick={() => setLimit(limit+5)}>Carregar mais</button> */
 
 }
