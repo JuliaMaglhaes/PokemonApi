@@ -4,7 +4,7 @@ function MyApp({ Component, pageProps }) {
   return(
     <div>
       <Component {...pageProps} />
-      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js" type="text/javascript"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js" type="text/javascript"></script>
     </div>
     
     )

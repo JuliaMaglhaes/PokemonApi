@@ -4,7 +4,6 @@ import 'rc-slider/assets/index.css'
 
 export const PokemonCard = ({id, name, image, type, habbitat, hp, attack, defense, special1, special2, speed}) => {
     const style = `cardPokemon ${type}`
-    console.log(hp)
     return(
         <div className={style}>
               <div className={styles.informationPokemon}>

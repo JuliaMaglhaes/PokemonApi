@@ -31,7 +31,7 @@ export default function Home() {
     }
     fetchPokemons()
    },[limit])
-   console.log(pokemons)
+  //  console.log(pokemons)
 
 return(
   <div>
