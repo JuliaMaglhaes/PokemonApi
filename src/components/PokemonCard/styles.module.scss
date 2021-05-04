@@ -1,12 +1,23 @@
-.cardPokemon{
-    width:250px;
+.container{
+    background: linear-gradient(to right, #0179a3, #02013a);
+    padding:2px;
+    border-radius: 10px;
+    display: flex;
+    width:260px;
     height:350px;
+    margin-bottom:30px;
+}
+
+.cardPokemon{
+    width:255px;
+    height:346px;
     display:flex;
     background-color:rgb(46, 46, 66);
     border-radius:10px;
     flex-direction: column;
     box-shadow: 0 0 6px 0.2px #00000031;
-    margin-top:30px;
+    // margin-top:40px;
+    border: 2px solid #0000003a;
 }
 
 .informationPokemon{
@@ -23,6 +34,7 @@
         margin-top:15px;
         color: white;
         font-size:19px;
+        
     }
 
     p:nth-child(2){
@@ -44,14 +56,17 @@
     text-align: center;
 
     img{
-        width:auto; 
-        height:80%;
+        height:auto;
         justify-content:center;
         display:flex;
         align-items:center;
         margin-top:-235px;
-        min-width: 90px;
+        height: 115px;
         width: 120px;
+        // background-image: url("https://image.flaticon.com/icons/png/512/188/188917.png");
+        // background-position: center;
+        // background-repeat: no-repeat;
+        // background-size: contain;
     }
 
     p{
@@ -96,11 +111,19 @@
     }
 }
 
+
+
 .rc-slider-handle{
     display:none;
     border:none;
     width:0%;
     height:0%;
-
 }
+
+.rc-slider-rail {
+    border-radius: 0px;
+  }
+  .rc-slider-track {
+    border-radius: 0px;
+  }
 

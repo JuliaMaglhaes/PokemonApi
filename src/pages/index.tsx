@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react"
 import { api } from "../services/api";
-import styles from "./styles.module.scss"
+import styles from "./styles.module.scss";
+import { Header } from "../components/Header";
 import { PokemonCard } from "../components/PokemonCard/PokemonCard"
 
 export default function Home() {
 
+  // Pokémon
   const [pokemons, setPokemons] = useState([]);
   const [limit, setLimit] = useState(40);
   
@@ -30,12 +32,13 @@ export default function Home() {
       }
     }
     fetchPokemons()
-   },[limit])
-  //  console.log(pokemons)
+  },[limit])
+   console.log(pokemons)
 
 return(
   <div>
-          <div className={styles.cardPokemonContainer}>
+    <Header/>
+        <div className={styles.cardPokemonContainer}>
           {pokemons.map((pokemon, index) =>{
             return (
               <div className={styles.geralContainer}>

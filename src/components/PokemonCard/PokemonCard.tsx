@@ -1,11 +1,27 @@
 import styles from "./styles.module.scss";
 import Slider from 'rc-slider';
 import 'rc-slider/assets/index.css'
+import { useEffect } from "react";
+
 
 export const PokemonCard = ({id, name, image, type, habbitat, hp, attack, defense, special1, special2, speed}) => {
     const style = `cardPokemon ${type}`
+
+    useEffect(() => {
+        function fetchSpecie(){
+            const species = fetch(`https://pokeapi.co/api/v2/evolution-chain/${id}`)
+            .then((response) =>{
+                return response.json()
+            })
+            .then((data) => {
+                // console.log(data.chain.evolves_to[0])
+            })
+        }
+        fetchSpecie()
+    })
     return(
-        <div className={style}>
+        <div className={styles.container}>
+            <div className={style}>
               <div className={styles.informationPokemon}>
                     <p>#0{id}</p>
                     <p>{type}</p>
@@ -22,7 +38,6 @@ export const PokemonCard = ({id, name, image, type, habbitat, hp, attack, defens
                             value = {hp}
                             trackStyle = {{backgroundColor: '#475655'}}
                             railStyle = {{backgroundColor: '#bfcee2'}}
-                            
                         />
                     </div>
                     <div className={styles.slider}>
@@ -70,10 +85,8 @@ export const PokemonCard = ({id, name, image, type, habbitat, hp, attack, defens
                             railStyle = {{backgroundColor: '#bfcee2'}}
                         />
                     </div>
-
                 </div>
-
-
+            </div>
             </div>
         )
 }
