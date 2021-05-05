@@ -34,6 +34,7 @@
         margin-top:15px;
         color: white;
         font-size:19px;
+        text-shadow: -1px 1px 1px #13131365;
         
     }
 
@@ -77,6 +78,7 @@
         border-radius: 5px;
         margin-top:10px;
         width:70%;
+        text-shadow: -1px 1px 1px #1313137a;
     }
 
     span{
@@ -100,6 +102,11 @@
         justify-content:center;
         display:flex;
         flex-direction:column;
+
+        p{
+            color:white;
+            text-shadow: -1px 1px 1px #131313c4;
+        }
 
         .rc-slider-handle{
             display:none;

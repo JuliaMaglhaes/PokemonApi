@@ -36,7 +36,7 @@ export const PokemonCard = ({id, name, image, type, habbitat, hp, attack, defens
                         <Slider
                             max = {300}
                             value = {hp}
-                            trackStyle = {{backgroundColor: '#475655'}}
+                            trackStyle = {{backgroundColor: '#dff72a'}}
                             railStyle = {{backgroundColor: '#bfcee2'}}
                         />
                     </div>
@@ -45,7 +45,7 @@ export const PokemonCard = ({id, name, image, type, habbitat, hp, attack, defens
                         <Slider
                             max = {300}
                             value = {attack}
-                            trackStyle = {{backgroundColor: '#475655'}}
+                            trackStyle = {{backgroundColor: '#ff0000'}}
                             railStyle = {{backgroundColor: '#bfcee2'}}
                         />
                     </div>
@@ -54,7 +54,7 @@ export const PokemonCard = ({id, name, image, type, habbitat, hp, attack, defens
                         <Slider
                             max = {300}
                             value = {defense}
-                            trackStyle = {{backgroundColor: '#475655'}}
+                            trackStyle = {{backgroundColor: '#3653f6'}}
                             railStyle = {{backgroundColor: '#bfcee2'}}
                         />
                     </div>
@@ -63,7 +63,7 @@ export const PokemonCard = ({id, name, image, type, habbitat, hp, attack, defens
                         <Slider
                             max = {300}
                             value = {special1}
-                            trackStyle = {{backgroundColor: '#475655'}}
+                            trackStyle = {{backgroundColor: '#ff9700'}}
                             railStyle = {{backgroundColor: '#bfcee2'}}
                         />
                     </div>
@@ -72,7 +72,7 @@ export const PokemonCard = ({id, name, image, type, habbitat, hp, attack, defens
                         <Slider
                             max = {300}
                             value = {special2}
-                            trackStyle = {{backgroundColor: '#475655'}}
+                            trackStyle = {{backgroundColor: '#ff4f00'}}
                             railStyle = {{backgroundColor: '#bfcee2'}}
                         />
                     </div>
@@ -81,7 +81,7 @@ export const PokemonCard = ({id, name, image, type, habbitat, hp, attack, defens
                         <Slider
                             max = {300}
                             value = {speed}
-                            trackStyle = {{backgroundColor: '#475655'}}
+                            trackStyle = {{backgroundColor: '#2c103f'}}
                             railStyle = {{backgroundColor: '#bfcee2'}}
                         />
                     </div>
